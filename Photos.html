@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Photos.css" />
+    <title>Photos Page</title>
+
+<!--Inserting Javascript for SlideShow-->
+<script>
+var slideIndex = 0;
+showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</head>
+<body>
+<!--Start of Photos Slideshow-->
+<div id = "slideshow" class = "photos-slideshow">
+
+    <!--Full-width image with caption and slideshow number-->
+    <div id = "slideshow-images" class="mySlides" >
+            <img src = "Photos Slideshow/ImgNum1.jpg" style = "width: 100%">
+    </div>
+
+    <div id = "slideshow-images" class="mySlides" >
+            <img src = "Photos Slideshow/ImgNum2.jpg" style = "width: 100%">
+    </div>
+
+    <div id = "slideshow-images" class="mySlides" >
+            <img src = "Photos Slideshow/ImgNum3.jpeg" style = "width: 100%">
+    </div>
+
+    <div id = "slideshow-images" class="mySlides" >
+            <img src = "Photos Slideshow/ImgNum4.jpeg" style = "width: 100%">
+    </div>
+
+    <!--Start of Next and Previous Buttons-->
+    <a id = "prev" class = "prev" onclick = "plusSlides(-1)"> &#10094; </a>
+    <a id = "next" class = "next" onclick = "plusSlides(1)"> &#10095; </a>
+</div>
+<br> 
+
+<!--Circles Indicating which slide-->
+<div style = "text-align: center;">
+    <span class = "dot" onclick = "currentSlide(1)"></span>"
+    <span class = "dot" onclick = "currentSlide(2)"></span>"
+    <span class = "dot" onclick = "currentSlide(3)"></span>"
+    <span class = "dot" onclick = "currentSlide(4)"></span>"
+</div>
+
+<!--Start of Image Gallery-->
+<div class="responsive">
+<div id = "gallery" class="gallery">
+    <a target="_blank" href="Photos Slideshow/ImgNum1.jpg">
+      <img src="Photos Slideshow/ImgNum1.jpg" alt="Festival Pictures" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div id = "gallery" class="gallery">
+    <a target="_blank" href="Photos Slideshow/ImgNum2.jpg">
+      <img src="Photos Slideshow/ImgNum2.jpg" alt="Festival Pictures" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div id = "gallery" class="gallery">
+    <a target="_blank" href="Photos Slideshow/ImgNum3.jpeg">
+      <img src="Photos Slideshow/ImgNum3.jpeg" alt="Festival Pictures" width="600" height="400">
+    </a>
+  </div>
+</div>
+
+<div class="responsive">
+  <div id = "gallery" class="gallery">
+    <a target="_blank" href="Photos Slideshow/ImgNum4.jpeeg">
+      <img src="Photos Slideshow/ImgNum4.jpeg" alt="Festival Pictures" width="600" height="400">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+    <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum5.jpeg">
+          <img src="Photos Slideshow/ImgNum5.jpeg" alt="Festival Pictures" width="600" height="400">
+        </a>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum6.jpg">
+          <img src="Photos Slideshow/ImgNum6.jpg" alt="Festival Pictures" width="600" height="400">
+        </a>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum7.jpeg">
+          <img src="Photos Slideshow/ImgNum7.jpeg" alt="Festival Pictures" width="600" height="400">
+        </a>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum8.jpg">
+          <img src="Photos Slideshow/ImgNum8.jpg" alt="Festival Pictures" width="600" height="400">
+        </a>
+      </div>
+    </div>
+
+    <div class="responsive">
+        <div id = "gallery" class="gallery">
+          <a target="_blank" href="Photos Slideshow/ImgNum9.jpeg">
+            <img src="Photos Slideshow/ImgNum9.jpeg" alt="Festival Pictures" width="600" height="400">
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div id = "gallery" class="gallery">
+          <a target="_blank" href="Photos Slideshow/ImgNum10.jpeg">
+            <img src="Photos Slideshow/ImgNum10.jpeg" alt="Festival Pictures" width="600" height="400">
+          </a>
+        </div>
+      </div>
+      
+      <div class="responsive">
+        <div id = "gallery" class="gallery">
+          <a target="_blank" href="Photos Slideshow/ImgNum11.jpg">
+            <img src="Photos Slideshow/ImgNum11.jpg" alt="Festival Pictures" width="600" height="400">
+          </a>
+        </div>
+      </div>
+      <div class="responsive">
+          <div id = "gallery" class="gallery">
+              <a target="_blank" href="Photos Slideshow/ImgNum12.jpg">
+                <img src="Photos Slideshow/ImgNum12.jpg" alt="Festival Pictures" width="600" height="400">
+              </a>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div id = "gallery" class="gallery">
+              <a target="_blank" href="Photos Slideshow/ImgNum13.jpg">
+                <img src="Photos Slideshow/ImgNum13.jpg" alt="Festival Pictures" width="600" height="400">
+              </a>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div id = "gallery" class="gallery">
+              <a target="_blank" href="Photos Slideshow/ImgNum14.jpeg">
+                <img src="Photos Slideshow/ImgNum14.jpeg" alt="Festival Pictures" width="600" height="400">
+              </a>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div id = "gallery" class="gallery">
+              <a target="_blank" href="Photos Slideshow/ImgNum15.jpeg">
+                <img src="Photos Slideshow/ImgNum15.jpeg" alt="Festival Pictures" width="600" height="400">
+              </a>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div id = "gallery" class="gallery">
+              <a target="_blank" href="Photos Slideshow/ImgNum16.jpeg">
+                <img src="Photos Slideshow/ImgNum16.jpeg" alt="Festival Pictures" width="600" height="400">
+              </a>
+            </div>
+          </div>
+</body>
+</html>
