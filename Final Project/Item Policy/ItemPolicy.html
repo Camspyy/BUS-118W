@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Inserting Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <title>Item Policy Page</title>
+</head>
+<style>
+     html * {
+       font-family: Georgia, 'Times New Roman', Times, serif;
+       font-size: medium;
+       }
+      .logoheader {
+        text-align: center;
+      }
+      
+      .nav.navbar-nav li a {
+       color: black;
+       }
+
+       .header {
+         width: 100%; 
+         height: 250px;
+         background-image: url("Policy Header.png");
+         background-size: cover;
+         background-position: center center;
+       }
+  
+
+      body {
+       background-image: url("/Home/HomeBackground.jpg");
+       background-color: white;
+
+      }  
+
+      .content {
+      padding: 16px;
+      }
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      
+      .sticky + .content {
+      padding-top: 60px;
+      }
+    p   {
+      text-align: center;
+      font-size: medium;
+    }
+    h2 {text-align: center;
+      text-decoration: underline;
+    }
+
+    .container {
+      background-color: rgba(245, 245, 245, 0.7);
+      border-radius: 25px;
+      font-size: small;
+    }
+
+    a.button {
+  background-color: rgb(63, 168, 209);
+  border: none;
+  color:white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+
+a.button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.centerbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+</style>
+<body>
+    <!--NavBar Start-->
+    <div class="logoheader">
+        <img src = "/Home/WebsiteLogo.png" alt = "logo">
+        </div>
+  
+  <!--Changes from white to black--> 
+  <nav class="navbar navbar-default" id = "navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="\Home\HomePage.html">
+          <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+         </a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="nav navbar-nav">
+          <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+          <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+          <li><a href="\Contact\ContactUs.html">Contact</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+                <li><a href="\Directions\Directions.html">Directions</a></li>
+                <li><a href="\Parking\Parking.html">Parking</a></li>
+                <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+                <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+          <li><a href="\Photos\Photos.html">Photos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--NavBar End-->
+      
+    <!--Start of Information Page -->
+        <div class = "header"></div>
+        <br> <br>
+
+        <div class = "container">
+            <h2 class = "head"> Venue and Hours</h2>
+            <div class = "centerbutton">
+              <a href="\Directions\Directions.html" class="button">VENUE INFORMATION</a>
+            </div>
+     
+
+            <h2 class = "head">Ages and ID</h2>
+           <p> You must be 18+ to enter and 21+ for alcohol. Photo ID required. </p>
+           <p1><b>ACCEPTABLE FORMS OF ID</b></p1>
+           <ul>
+               <li>Any US government-issued driver’s license or ID card containing a photograph and date of birth.</li>
+               <li>US or foreign government-issued passport containing a photograph and date of birth. </li>
+               <li>Foreign government-issued driver’s license/ID with color photocopy of passport (Not valid for 21+ wristband. 
+                   To purchase alcohol or enter VIP areas, a physical passport or US ID will be required.) </li>
+               <li>Temporary DMV documents proving you are currently renewing a license—ONLY if accompanied by passport or expired license </li>
+           </ul>
+
+           <p1><b>UNACCEPTABLE FORMS OF ID</b></p1>
+           <ul>
+               <li><b>NO</b> School ID </li>
+               <li><b>NO</b> Consular ID </li>
+               <li><b>NO</b> Birth certificate</li>
+               <li><b>NO</b> Expired ID of any kind</li>
+               <li><b>NO</b> Photocopy of any ID (except as noted) </li>
+               <li><b>NO</b> Temporary DMV license without passport or expired license</li>
+           </ul>
+        
+
+            <h2 class = "head">Security and Entry</h2>
+         <ul>
+            <li>By purchasing a ticket, you agree to submit to a thorough, TSA-style search, including emptying your pockets and bags, 
+             having all of your items examined, a full pat-down, and possibly removing your shoes. 
+             We reserve the right to refuse entry to anyone.</li>
+            <li>All attendees will have their bags checked to ensure that no one is bringing in any weapons or illegal substances.</li>
+            <li>Any attendee who is found to have anything prohibited or illegal is subjected to be turned into the authorities as the rise of 
+              fentanyl surges the streets. FVC^2K^2 does not condone or support the sale or distribution of substances that may result in any injury or death. </li>
+            </li>
+          </ul>
+       
+
+     
+            <h2 class = "head">Festival Policies</h2>
+           <ul>
+            <li><b>NO</b> Re-entry/ins & outs per day</li>
+            <li><b>NO</b> Camping</li>
+            <li><b>NO</b> Refunds or exchanges</li>
+            <li><b>NO</b> Sitting on designated dancefloor areas</li>
+            <li><b>NO</b> Moshing, crowd-surfing or stage-diving</li>
+            <li><b>NO</b> Unauthorized solicitations, handbills, sampling, giveaways, etc.</li>
+            <li><b>NO</b> Cash: This festival is a cashless event. 
+                Credit, debit, Samsung Pay, Apple Pay, and Android Pay will be accepted.</li>
+            </ul>
+     
+
+       
+            <h2 class = "head">Acceptable Items</h2>
+            <ul>
+                <li><b>YES </b>Cell phones and portable chargers/external batteries</li>
+                <li><b>YES </b>Cigarettes (must be sealed upon entry) and lighters</li>
+                <li><b>YES </b>Deodorant (must be sealed at entry)</li>
+                <li><b>YES </b>E-cigs/vapes (Refillable liquid chambers OK, must be empty upon entry. 
+                    One bottle sealed/unopened E-liquid or E-juice will be permitted.) </li>
+                <li><b>YES </b>Earplugs and Fanny Packs</li>
+                <li><b>YES </b>Festival totems or decorated pool noodles</li>
+                <li><b>YES </b>Flags/banners or handmade signs (no corporate/company-branded and no hard flagpoles)</li>
+                <li><b>YES </b>Glowsticks & glowing/illuminated costumes or jewelry</li>
+                <li><b>YES </b>Gum (must be sealed upon entry)</li>
+                <li><b>YES </b>Hula hoops—including LED hoops</li>
+                <li><b>YES </b>Hydration packs with no more than two main compartments and one smaller compartment (must be empty upon entry)</li>
+                <li><b>YES </b>Inflatables (must be deflated upon entry)</li>
+                <li><b>YES </b>Juuls (one factory-sealed Juul Pod OK at entry)</li>
+                <li><b>YES </b>LED whips, pois & orbitals</li>
+                <li><b>YES </b>Lip balm, lip gloss, and lipstick (must be sealed upon entry)</li>
+                <li><b>YES </b>Non-professional flash/still cameras, handheld video devices under 6″ 
+                    (Sony Action Cam, GoPro, Polaroids, etc.)</li>
+                <li><b>YES </b>Personal misting fan with a bottle no larger than 1.5L (must be empty upon arrival)</li>
+                <li><b>YES </b>Physician-prescribed medication that is not expired (must show physician’s prescription and consult with a safety officer upon entry)</li>
+                <li><b>YES </b>Powder makeup (liquid makeup is prohibited)</li>
+                <li><b>YES </b>Rain ponchos and umbrellas measuring less than 10″ when collapsed</li>
+                <li><b>YES </b>Reusable water bottles (must be empty upon entry)</li>
+                <li><b>YES </b>Selfie sticks, Sunglasses & hats</li>
+                <li><b>YES </b>Small bags, single-compartment bags, plush bags, purses (maximum 12″x12″)</li>
+                <li><b>YES </b>Sunscreen lotion (inspected upon entry)</li>
+                <li><b>YES </b>Tampons and pads (must be sealed at entry)</li>
+                <li><b>YES </b>Wet wipes (must be sealed at entry)</li>
+            </ul>
+  
+
+      
+            <h2 class = "head">Prohibited Items</h2>
+            <ul>
+                <li><b>NO </b>Aerosol products/cans, Balls, or Frisbees</li>
+                <li><b>NO </b>Bota bags, Drugs, or Drug Paraphernalia</li>
+                <li><b>NO </b>Costumes that resemble public safety uniforms (police, SWAT, fire, security, or medical) in any way</li>
+                <li><b>NO </b>Drones, remote-controlled aircraft, toys</li>
+                <li><b>NO </b>Gas masks or Eye drops (available inside festival at the general store)</li>
+                <li><b>NO </b>Glass, cans, cups or coolers</li>
+                <li><b>NO </b>Helium balloons, Illegal substances, Large chains or spiked jewelry</li>
+                <li><b>NO </b>Large purses, bags or backpacks (over 12″× 12″)</li>
+                <li><b>NO </b>Laser pointers and air horns</li>
+                <li><b>NO </b>LED gloves or LED microlights used for light shows</li>
+                <li><b>NO </b>Liquid makeup, Markers, pens or spray paint </li>
+                <li><b>NO </b>Massagers, Pacifers, Stickers, Flyers, Stuffed Animals, or Dolls</li>
+                <li><b>NO </b>Pets</li>
+                <li><b>NO </b>Open packs of cigarettes (upon entry), Outside food or beverages (including alcohol and candy)</li>
+                <li><b>NO </b>Over-the-counter medication (available inside festival at general store or from a first aid station)</li>
+                <li><b>NO </b>Professional photo, video, or audio recording equipment (no detachable lenses, tripods, big zooms or commercial-use rigs)</li>
+                <li><b>NO </b>Tents, large umbrellas, chairs or blankets</li>
+                <li><b>NO </b>Toy guns, water guns, slingshots</li>
+                <li><b>NO </b>Unsealed tampons or pads (upon entry)</li>
+                <li><b>NO </b>Weapon or weapon accessories of any kind, real or fictional (including whips, lightsabers, pocket knives, pepper spray, fireworks, 
+                    fake weapons/props, etc.)</li>
+                <li><b>NO </b>Wind chairs/sofas</li>
+                <li><b>NO </b>Beanbags</li>
+            </ul>
+        </div>
+    <!--JavaScript starts here-->
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+  const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+const itemToggle = this.getAttribute('aria-expanded');
+
+ for(i=0; i < items.length; i++) {
+      items[i].setAttribute('aria-expanded', 'false');
+}
+
+ if (itemToggle == 'false') {
+      this.setAttribute('aria-expanded' , 'true');
+     }
+}
+
+items.forEach((item) => item.addEventListener('click' , toggleAccordion));
+ 
+window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" type ="text/css"   href="/Payment/Payment.html">
+      <style>
+ .logoheader {
+        text-align: center;
+      }
+      
+      .nav.navbar-nav li a {
+       color: black;
+       }
+
+       .header {
+         width: 100%; 
+         height: 250px;
+         background-image: url("Policy Header.png");
+         background-size: cover;
+         background-position: center center;
+       }
+  
+
+      body {
+       background-image: url("/Home/HomeBackground.jpg");
+       background-color: white;
+
+      }  
+
+      .content {
+      padding: 16px;
+      }
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      
+      .sticky + .content {
+      padding-top: 60px;
+      }
+        body {
+            background-image: url("/Home/HomeBackground.jpg");
+            width: 100%;
+            height: 100%;
+        }
+
+    .checkout-page {
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: auto;
+    }
+    form {
+      width: 400px;
+      height: 1045px;
+      margin-top: 50px;
+      max-width:600px;
+      text-align:left;
+      margin-left:auto;
+      margin-right: auto;
+      color: grey;
+      padding: 30px;
+      display:flex;
+      flex-direction:column;
+      background-color: white;
+    }
+    li{
+      list-style-type: disc;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    select{
+      width: 100%;
+      padding: 10px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 4px;
+      box-sizing:border-box;
+    }
+    input[type="email"],
+    select{
+      width: 100%;
+      border:none;
+      padding: 10px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 4px;
+      box-sizing:border-box;
+    }
+    input[type="password"],
+    select{
+      width: 100%;
+      border:none;
+      padding: 10px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 4px;
+      box-sizing:border-box;
+    }
+    input[type="submit"],
+    select{
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(40, 167, 226);
+      border: none;
+      border-radius: 1px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-top: 20px;
+      font-family: "Times New Roman";
+    }
+    label {
+      font-weight: bold;
+      font-family: "Times New Roman";
+      color: rgba(82, 76, 76, 0.774);
+      padding-top: 10px;
+    }
+
+  
+    </style>
+</head>
+<body>
+
+   <!--NavBar Start-->
+   <div class="logoheader">
+    <img src = "/Home/WebsiteLogo.png" alt = "logo">
+    </div>
+
+<!--Changes from white to black--> 
+<nav class="navbar navbar-default" id = "navbar">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="\Home\HomePage.html">
+      <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+     </a>
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="topNav">
+    <ul class="nav navbar-nav">
+      <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+      <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+      <li><a href="\Contact\ContactUs.html">Contact</a></li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+            <li><a href="\Directions\Directions.html">Directions</a></li>
+            <li><a href="\Parking\Parking.html">Parking</a></li>
+            <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+            <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+          </ul>
+        </li>
+      <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+      <li><a href="\Photos\Photos.html">Photos</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+  <!--NavBar End-->
+
+    <form method ="GET" action = "/Payment/Payment.html">
+        <p><label>First Name:
+          <input name = "First Name:" type = "text" size = "25" maxlength="30" placeholder = "First Name" 
+              required />
+        </label>
+
+        <label>Last Name:
+          <input name = "Last Name:" type = "text" size = "25" maxlength="30" placeholder = "Last Name" 
+                required />
+        </label>
+
+        <label>Country:
+          <input country = "Country:" type = "text" size = "25" maxlength="30" placeholder = "Country" 
+                required />
+        </label>
+
+        <label>Street Address:
+          <input location = "Street Address:" type = "text" size = "25" maxlength="30" placeholder = "Street Address" 
+                required />
+        </label>
+
+        <label>Apt Number:
+          <input name = "Apt Number:" type = "text" size = "25" maxlength="30" placeholder = "Ex: 123" 
+                 />
+        </label>
+
+        <label>City:
+          <input location = "City:" type = "text" size = "25" maxlength="30" placeholder = "City Name" 
+                required />
+        </label>
+
+        <label>State:
+          <input location = "State:" type = "text" size = "25" maxlength="30" placeholder = "State" 
+                required />
+        </label>
+
+        <label>Zip Code:
+          <input number = "Zip Code:" type = "text" size = "25" maxlength="30" placeholder = "Zip Code" 
+                required />
+        </label>
+
+        <label>Email:
+          <input email = "Email:" type = "text" size = "25" maxlength="30" placeholder = "Ex: name@domain.com" 
+                required />
+          </label>
+
+        <label>Phone Number:
+          <input email = "Phone Number:" type = "text" size = "25" maxlength="30" placeholder = "Ex: (123) 456 - 7899" 
+                required />
+          </label>
+
+          <input type ="submit" value="Proceed to Payment">
+        </p>
+
+        <script>
+          window.onscroll = function() {stickyTop()};
+      
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      
+      function stickyTop() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+</body>
+</html>

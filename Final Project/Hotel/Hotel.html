@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="HotelCSS.css"/>
+    <title>Hotels Page</title>
+        <!--NavBar CSS-->
+        <style>
+            .logoheader {
+              text-align: center;
+            }
+            .nav.navbar-nav li a {
+             color: black;
+              }
+
+            body {
+             background-image: url("/Home/HomeBackground.jpg");
+             background-color: white;
+            }  
+
+            .content {
+            padding: 16px;
+            }
+            .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            }
+            
+            .sticky + .content {
+            padding-top: 60px;
+            }
+            </style>
+</head>
+<body>
+      <!--NavBar Start-->
+      <div class="logoheader">
+          <img src = "/Home/WebsiteLogo.png" alt = "logo">
+        </div>
+  
+  <!--Changes from white to black--> 
+  <nav class="navbar navbar-default" id = "navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="\Home\HomePage.html">
+          <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+         </a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="nav navbar-nav">
+          <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+          <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+          <li><a href="\Contact\ContactUs.html">Contact</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+                <li><a href="\Directions\Directions.html">Directions</a></li>
+                <li><a href="\Parking\Parking.html">Parking</a></li>
+                <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+                <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+          <li><a href="\Photos\Photos.html">Photos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--NavBar End-->
+    <div class = "header"> </div>
+    <br>
+
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <h2>Courtyard by Marriot New York</h2>
+                    <p>1717 Broadway</p>
+                    <p>New York, NY 10019</p>
+                    <p>(212) 324-3733</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <h2>Fairfield Inn & Suites</h2>
+                    <p>538 W 58th St</p>
+                    <p>New York, NY 10019</p>
+                    <p>(212) 757-8550</p>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="content">
+                    <h2>Four Seasons Hotel</h2>
+                    <p>57 E 57th St</p>
+                    <p>New York, NY 10019</p>
+                    <p>(212) 758-5700</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <h2>The Manhattan Club</h2>
+                    <p>200 W 56th St</p>
+                    <p>New York, NY 10019</p>
+                    <p>(888) 692-2121</p>
+                </div>
+            </div>
+
+            <div class="box">
+              <div class="content">
+                  <h2>1 Hotel Central Park</h2>
+                  <p>1414 Ave Of The Americas</p>
+                  <p>New York, NY 10025</p>
+                  <p>(347) 343-5772</p>
+              </div>
+          </div>
+
+          <div class="box">
+            <div class="content">
+                <h2>Hampton Inn</h2>
+                <p>851 Eighth Ave</p>
+                <p>New York, NY 10019</p>
+                <p>(212) 581-41001</p>
+            </div>
+        </div>
+        <div class="box">
+          <div class="content">
+              <h2>Park Hyatt</h2>
+              <p>153 West 57th St</p>
+              <p>New York, NY 10019</p>
+              <p>(646) 774-1234</p>
+          </div>
+      </div>
+        </div>
+<!--JavaScript starts here-->
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+ 
+window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+    </body>
+    </html>

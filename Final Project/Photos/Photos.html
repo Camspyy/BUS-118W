@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="PhotosCSS.css" />
+    <title>Photos Page</title>
+     <!--NavBar CSS-->
+     <style>
+
+      html * {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .logoheader {
+        text-align: center;
+      }
+
+      .nav.navbar-nav li a {
+       color: black;
+       }
+
+      body {
+       background-image: url("/Home/HomeBackground.jpg");
+       background-color: white;
+      }  
+
+      .content {
+      padding: 16px;
+      }
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      
+      .sticky + .content {
+      padding-top: 60px;
+      }
+
+      .thumbnail {
+          padding: 10px;
+          
+      }
+      .row {
+          padding: 10px;
+      }
+
+      </style>
+</head>
+<body>
+   <!--NavBar Start-->
+   <div class="logoheader">
+      <img src = "/Home/WebsiteLogo.png" alt = "logo" >
+    </div>
+
+<!--Changes from white to black--> 
+<nav class="navbar navbar-default" id = "navbar">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="\Home\HomePage.html">
+      <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+     </a>
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="topNav">
+    <ul class="nav navbar-nav">
+      <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+      <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+      <li><a href="\Contact\ContactUs.html">Contact</a></li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+            <li><a href="\Directions\Directions.html">Directions</a></li>
+            <li><a href="\Parking\Parking.html">Parking</a></li>
+            <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+            <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+          </ul>
+        </li>
+      <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+      <li><a href="\Photos\Photos.html">Photos</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+  <!--NavBar End-->
+
+<!--Start of Image Gallery-->
+<div class = "header">
+</div>
+
+ <div class = "row">
+   <div class = "col-md-4">
+     <div class = "thumbnail" >
+      <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum1.jpg">
+          <img src="Photos Slideshow/ImgNum1.jpg" alt="Festival Pictures">
+        </a>
+         </div>
+      </div>
+     </div>
+
+     <div class = "col-md-4">
+        <div class = "thumbnail" >
+         <div id = "gallery" class="gallery">
+           <a target="_blank" href="Photos Slideshow/ImgNum2.jpg">
+             <img src="Photos Slideshow/ImgNum2.jpg" alt="Festival Pictures" height="400px" width="400px">
+           </a>
+            </div>
+         </div>
+        </div>
+
+     <div class = "col-md-4">
+     <div class = "thumbnail" >
+      <div id = "gallery" class="gallery">
+        <a target="_blank" href="Photos Slideshow/ImgNum3.jpeg">
+          <img src="Photos Slideshow/ImgNum3.jpeg" alt="Festival Pictures">
+        </a>
+         </div>
+      </div>
+     </div>
+
+     <div class = "col-md-4">
+        <div class = "thumbnail" >
+         <div id = "gallery" class="gallery">
+           <a target="_blank" href="Photos Slideshow/ImgNum4.jpeg">
+             <img src="Photos Slideshow/ImgNum4.jpeg" alt="Festival Pictures" >
+           </a>
+            </div>
+         </div>
+        </div>
+
+        <div class = "col-md-4">
+            <div class = "thumbnail" >
+             <div id = "gallery" class="gallery">
+               <a target="_blank" href="Photos Slideshow/ImgNum5.jpeg">
+                 <img src="Photos Slideshow/ImgNum5.jpeg" alt="Festival Pictures" >
+               </a>
+                </div>
+             </div>
+            </div>
+       
+            <div class = "col-md-4">
+               <div class = "thumbnail" >
+                <div id = "gallery" class="gallery">
+                  <a target="_blank" href="Photos Slideshow/ImgNum6.jpg">
+                    <img src="Photos Slideshow/ImgNum6.jpg" alt="Festival Pictures">
+                  </a>
+                   </div>
+                </div>
+               </div>
+               
+            <div class = "col-md-4">
+            <div class = "thumbnail" >
+             <div id = "gallery" class="gallery">
+               <a target="_blank" href="Photos Slideshow/ImgNum7.jpeg">
+                 <img src="Photos Slideshow/ImgNum7.jpeg" alt="Festival Pictures" >
+               </a>
+                </div>
+             </div>
+            </div>
+       
+            <div class = "col-md-4">
+               <div class = "thumbnail" >
+                <div id = "gallery" class="gallery">
+                  <a target="_blank" href="Photos Slideshow/ImgNum8.jpg">
+                    <img src="Photos Slideshow/ImgNum8.jpg" alt="Festival Pictures" >
+                  </a>
+                   </div>
+                </div>
+               </div>
+
+            <div class = "col-md-4">
+               <div class = "thumbnail" >
+                <div id = "gallery" class="gallery">
+                  <a target="_blank" href="Photos Slideshow/ImgNum9.jpeg">
+                    <img src="Photos Slideshow/ImgNum9.jpeg" alt="Festival Pictures">
+                  </a>
+                   </div>
+                </div>
+               </div>
+               
+            <div class = "col-md-4">
+            <div class = "thumbnail" >
+             <div id = "gallery" class="gallery">
+               <a target="_blank" href="Photos Slideshow/ImgNum10.jpeg">
+                 <img src="Photos Slideshow/ImgNum10.jpeg" alt="Festival Pictures" >
+               </a>
+                </div>
+             </div>
+            </div>
+       
+            <div class = "col-md-4">
+               <div class = "thumbnail" >
+                <div id = "gallery" class="gallery">
+                  <a target="_blank" href="Photos Slideshow/ImgNum11.jpg">
+                    <img src="Photos Slideshow/ImgNum11.jpg" alt="Festival Pictures">
+                  </a>
+                   </div>
+                </div>
+               </div> 
+
+            <div class = "col-md-4">
+              <div class = "thumbnail" >
+                 <div id = "gallery" class="gallery">
+                   <a target="_blank" href="Photos Slideshow/ImgNum12.jpg">
+                     <img src="Photos Slideshow/ImgNum12.jpg" alt="Festival Pictures">
+                   </a>
+                    </div>
+                 </div>
+            </div> 
+
+            <div class = "col-md-4">
+                <div class = "thumbnail" >
+                 <div id = "gallery" class="gallery">
+                   <a target="_blank" href="Photos Slideshow/ImgNum13.jpg">
+                     <img src="Photos Slideshow/ImgNum13.jpg" alt="Festival Pictures">
+                   </a>
+                    </div>
+                 </div>
+                </div>
+                
+             <div class = "col-md-4">
+             <div class = "thumbnail" >
+              <div id = "gallery" class="gallery">
+                <a target="_blank" href="Photos Slideshow/ImgNum14.jpeg">
+                  <img src="Photos Slideshow/ImgNum14.jpeg" alt="Festival Pictures" >
+                </a>
+                 </div>
+              </div>
+             </div>
+        
+             <div class = "col-md-4">
+                <div class = "thumbnail" >
+                 <div id = "gallery" class="gallery">
+                   <a target="_blank" href="Photos Slideshow/ImgNum15.jpeg">
+                     <img src="Photos Slideshow/ImgNum15.jpeg" alt="Festival Pictures">
+                   </a>
+                    </div>
+                 </div>
+                </div> 
+ 
+             <div class = "col-md-4">
+               <div class = "thumbnail" >
+                  <div id = "gallery" class="gallery">
+                    <a target="_blank" href="Photos Slideshow/ImgNum16.jpeg">
+                      <img src="Photos Slideshow/ImgNum16.jpeg" alt="Festival Pictures">
+                    </a>
+                     </div>
+                  </div>
+             </div> 
+     </div>
+      <!--JavaScript starts here-->
+    <!--function allows nav bar to stick to top after scrolling-->
+<script>
+    window.onscroll = function() {stickyTop()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function stickyTop() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+ 

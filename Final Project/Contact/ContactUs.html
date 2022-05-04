@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="ContactCSS.css">
+    <title>Contact Us</title>
+
+    <!--NavBar CSS-->
+    <style>
+   html* 
+   {font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+  }
+
+   .logoheader {
+     text-align: center;
+    }
+
+    .nav.navbar-nav li a {
+     color: black;
+     }
+
+    body {
+     background-image: url("/Home/HomeBackground.jpg");
+     background-color: white;
+    } 
+
+    .content {
+    padding: 16px;
+    }
+    .sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     }
+  
+    .sticky + .content {
+      padding-top: 60px;
+    }
+  </style>
+  </head>
+
+  <body>
+      <!--NavBar Start-->
+      <div class="logoheader">
+        <img src = "/Home/WebsiteLogo.png" alt = "logo" > 
+        </div>
+  
+  <!--Changes from white to black--> 
+  <nav class="navbar navbar-default" id = "navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="\Home\HomePage.html">
+          <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+         </a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="nav navbar-nav">
+          <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+          <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+          <li><a href="\Contact\ContactUs.html">Contact</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+                <li><a href="\Directions\Directions.html">Directions</a></li>
+                <li><a href="\Parking\Parking.html">Parking</a></li>
+                <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+                <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+          <li><a href="\Photos\Photos.html">Photos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--NavBar End-->
+      <div class = "header"> </div>
+      <br> <br>
+      <p>Feel free to contact us and we will get back to you as soon as we can.</p>
+      <div class = "row">
+      <br>
+        <div class="col-sm-4" style="background-color:transparent;">
+         <div class = "infocontainer">
+          <div class="box">
+            <div class="text">
+                 <h3><u><b>Address</u></b></h3>
+                 <p>5th Ave,<br>New York City, New York,<br>10029</p>
+             </div>
+             <div class="box">
+              <div class="text">
+                   <h3><u><b>Phone</u></b></h3>
+                   <p>(408)-924-1000</p>
+               </div>
+           </div>    
+           <div class="box">   
+            <div class="text">
+              <h3><u><b>Email</u></b></h3>
+                 <p>FVC2K2@contactus.com</p>
+             </div>
+           </div>     
+          </div>
+        </div>
+        </div>
+      <div class="col-sm-8" style="background-color:transparent;">   
+         <div class ="container">
+          <form action="/Contact/ContactConfirm.html" method="GET">
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" >
+              <label for="subject">Subject:</label>
+              <input type="text" name="subject" id="subject" >
+              <label for="message">Message</label>
+              <textarea name="message" cols="30" rows="8"> </textarea>
+              <input type="submit" value="Send">
+            </form>
+          </div>
+     </div>
+</div>    
+
+<!--JavaScript starts here-->
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+  window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  
+  </body>
+</html>

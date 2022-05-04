@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Home Page</title>
+<style>
+ html * {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .nav.navbar-nav li a {
+   color: black;
+ }
+ 
+
+ body {
+ background-image: url("HomeBackground.jpg");
+ background-color: white;
+} 
+ /* changes from white to transparent
+ .navbar-default {
+   background-color: transparent;
+   border: none;
+ }
+ */
+.logoheader {
+  text-align: center;
+}
+
+.content {
+padding: 16px;
+}
+.sticky {
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.sticky + .content {
+padding-top: 60px;
+}
+
+/*Start of content CSS*/
+a.button {
+  background-color: skyblue;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+
+}
+
+a.button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.centerbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+
+</style>
+</head>
+<!--Start of HTML for Nav Bar -->
+<body>
+    <div class="logoheader">
+        <img src = "WebsiteLogo.png" alt = "logo" >
+      </div>
+
+<!--Changes from white to black--> 
+<nav class="navbar navbar-default" id = "navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="HomePage.html">
+        <img src="WebsiteLogo.png" alt="logo" style="width: 50px;">
+       </a>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav">
+        <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+        <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+        <li><a href="\Contact\ContactUs.html">Contact</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+              <li><a href="\Directions\Directions.html">Directions</a></li>
+              <li><a href="\Parking\Parking.html">Parking</a></li>
+              <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+              <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+            </ul>
+          </li>
+        <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+        <li><a href="\Photos\Photos.html">Photos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+<!-- About Section -->
+<div class="w3-row" id="about">
+<div class="w3-col s6">
+    <img src="FrontPagePic.jpg" class="w3-image" alt="FestivalHome" width="600" height="750">
+    <div class = "centerbutton">
+    <a href="\Tickets\Tickets.html" class="button">BUY TICKETS</a>
+    </div>
+</div>
+
+<div class="w3-col s6 w3-padding-large">
+  <h1 class="w3-center">About FVC^2K^2</h1><br>
+  <p class="w3-large"> FVC^2K^2 is a music festival that is held in New York. Being known as one of the most significant public gardens in New York City, 
+     the conservatory gardens has alot of history behind it. Consisting of 6 acres, filled with flowers and beautiful architecture, 
+    it is the ideal venue for FVC^2K^2 to be held with numerous places to sit, dance, walk around and even hold a picnic while enjoying the music. </p>
+    </div>
+
+<div class="w3-row-padding">
+  <div class = "w3-col s12 w3-padding large">
+    <div class = "w3-center">
+      <img src = "/Schedule/Schedule.jpg" alt="schedulepic">
+    </div>
+   </div> 
+  </div>
+</div>
+
+  
+<!--JavaScript starts here-->
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+    window.onscroll = function() {stickyTop()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function stickyTop() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+</body>
+</html>

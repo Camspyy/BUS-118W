@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel=”stylesheet” href=”../css/bootstrap.css”>
+    <link rel=”stylesheet” href=”../css/bootstrap-responsive.css”>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="TicketsCSS.css" />
+    <title>Ticket Page</title>
+    <!--NavBar CSS-->
+    <style>
+       html * {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+      .logoheader {
+        text-align: center;
+      }
+
+      .nav.navbar-nav li a {
+       color: rgb(0, 0, 0);
+       }
+
+
+      body {
+       background-image: url("/Home/HomeBackground.jpg");
+       background-color: white;
+      }  
+      .content {
+      padding: 16px;
+      }
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      
+      .sticky + .content {
+      padding-top: 60px;
+      }
+      </style>
+  </head>
+  <body>
+    <!--NavBar Start-->
+    <div class="logoheader">
+      <img src = "/Home/WebsiteLogo.png" alt = "logo">
+      </div>
+
+<!--Changes from white to black--> 
+<nav class="navbar navbar-default" id = "navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="\Home\HomePage.html">
+        <img src="/Home/WebsiteLogo.png" alt="logo" style="width: 45px;">
+       </a>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav">
+        <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+        <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+        <li><a href="\Contact\ContactUs.html">Contact</a></li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+              <li><a href="\Directions\Directions.html">Directions</a></li>
+              <li><a href="\Parking\Parking.html">Parking</a></li>
+              <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+              <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+            </ul>
+          </li>
+        <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+        <li><a href="\Photos\Photos.html">Photos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!--NavBar End-->
+    <div class = "header">
+    </div>
+
+    <br> 
+    <!-- <div class="content"> -->
+    <p class="guide"> Follow our 4-step guide below to help you start building your perfect festival experience <br />
+      <strong>Our tip:</strong> Keep this page open as you make your selection
+    </p>
+    <div class="fticket">
+      <h1>Final Tickets Available Now</h1>
+      <p> Secure yours for an $50 deposit. All tickets go live at a later date. </p>
+      <div class="bookText">
+        <a style="color: black" href="../Check Out/Checkout.html" style="text-decoration: none">BOOK NOW</a>
+      </div>
+    </div>
+    <!--Step 1-->
+    <div class="flex-container">
+      <div class="flex-child" style="background: #3b3b3b">
+        <div class="stepTitle">
+          <p style="color: #ffffff">STEP 1</p>
+          <br />
+          <p>SELECTING YOUR FESTIVAL ENTRY TICKET</p>
+        </div>
+        <div class="bad">
+          <br />
+          <p>Pick one of the following options</p>
+          <br />
+          <p>All tickets including standard festival access</p>
+        </br>
+        </div>
+      </div>
+      <div class="flex-child" style="background: #3b3b3b">
+        <div class="stepTitle">
+            <p>TICKET TYPES:</p>
+        </br>
+        </div>
+        <div class="bad">
+          <li>Adult | $45</li>
+          <br />
+          <li>Child | $20</li>
+          <br />
+          <li>Refunds | If the festival is postponed or cancelled your festival passes will automatically be honored at the rescheduled date. Should you be unable to attend the new date, refunds will be offered within 30 days of the announced rescheduled date. If the festival is canceled, your festival passes will be refunded directly through our ticket vendors. We cannot verify the policies of any third-party ticket resellers. </li>
+        </div>
+      </div>
+      <!-- <div class="right"></div> -->
+    </div>
+    </div>
+    <!--Step 1-->
+    <div class="gap-10"></div>
+    <!--Step 2-->
+    <div class="flex-container">
+      <div class="flex-child" style="background: #3b3b3b">
+        <div class="stepTitle">
+          <p style="color: #ffffff">STEP 2 <em>(Optional)</em>
+          </p>
+          <br />
+          <p style="color:white">SELECTING HOW YOU'll GET THERE</p>
+        </div>
+        <div class="bad">
+          <br />
+          <p>You can add any of these options to your ticket at a later date</p>
+        </div>
+      </div>
+      <div class="flex-child" style="background: #3b3b3b">
+        <div class="stepTitle">
+          <p>TRANSPORTATION TYPES:</p>
+      </br>
+      </div>
+      <div class="bad">
+        <li>
+          <b>Shuttle:</b>
+          <span>&nbsp;If you’re coming by train, add a shuttle ticket to be picked up from the nearest train station and taken back again at the end of the festival.</span>
+        </li>
+        <br />
+        <li>
+          <b>Vehicle Pass:</b>
+          <span>If you're driving a car or camper-van, or bringing a caravan, you'll need one of these for your vehicle. It's cheaper to book these in advance of arrival</span>
+        </li>
+      </div>
+        <br />
+        <br />
+      </div>
+    </div>
+    <!--Step 2-->
+    <div class="gap-10"></div>
+    <!--Step 3-->
+    <div class="flex-container">
+      <div class="flex-child" style="background: #3b3b3b">
+        <div class="stepTitle">
+          <p style="color: #ffffff">STEP 3 <em>(Optional)</em>
+          </p>
+          <br />
+          <p>ADDED EXTRAS</p>
+        </div>
+        <div class="bad">
+          <br />
+          <p>Treat yourself!</p>
+        </div>
+      </div>
+      <div class="flex-child" style="background: #3b3b3b">
+          <div class="stepTitle">
+            <p>AMENITIES:</p>
+        </br>
+        </div>
+        <div class="bad">
+          <li>
+            <b>Flushing Toliets:</b>
+            <span>&nbsp;Weekend pass to flushing toilets located all around the festival.</span>
+          </li>
+        </br>
+          <li>
+            <b>Lockers:</b>
+            <span>&nbsp;Secure your valuables with a choice of locker locations and sizes..</span>
+          </li>
+        </br>
+          <li>
+            <b>Phone Charging:</b>
+            <span>&nbsp;Portable chargers or secure charging stations the options are yours to choose..</span>
+          </li>
+        </br>
+      </br>
+        </div>
+      </div>
+    </div>
+    <!--Step 3-->
+
+    <!--function allows nav bar to stick to top after scrolling-->
+<script>
+  window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  </body>
+</html>

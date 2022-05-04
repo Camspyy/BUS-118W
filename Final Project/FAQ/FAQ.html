@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="FAQCSS.css" />
+    <title>FAQ</title>
+    <!--NavBar CSS-->
+    <style>
+
+        html *{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          color:black;
+        }
+
+        .logoheader {
+          text-align: center;
+        }
+        .nav.navbar-nav li a {
+          color: black;
+        }
+
+        body {
+        background-image: url("/Home/HomeBackground.jpg");
+        background-color: white;
+        }
+        .content {
+        padding: 16px;
+        }
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+        
+        .sticky + .content {
+        padding-top: 60px;
+        }
+        </style>
+  </head>
+
+  <body>
+        <!--NavBar Start-->
+    <div class="logoheader">
+       <img src = "/Home/WebsiteLogo.png" alt = "logo" >
+        </div>
+  
+  <!--Changes from white to black--> 
+  <nav class="navbar navbar-default" id = "navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="\Home\HomePage.html">
+          <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+         </a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="nav navbar-nav">
+          <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+          <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+          <li><a href="\Contact\ContactUs.html">Contact</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+                <li><a href="\Directions\Directions.html">Directions</a></li>
+                <li><a href="\Parking\Parking.html">Parking</a></li>
+                <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+                <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+          <li><a href="\Photos\Photos.html">Photos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--NavBar End-->
+
+      <div class = "header"></div>
+      <br>
+    <div class = "content-body">
+      <div class="accordion">
+          <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title">Are refunds available if 2022 FVC2K2 is postponed or canceled?</span>
+                  <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                  <p>If the festival is postponed or cancelled your festival passes will automatically be honored at the rescheduled date. Should you be unable to attend the new date, refunds will be offered within 30 days of the announced rescheduled date. If the festival is canceled, your festival passes will be refunded directly through our ticket vendors. We cannot verify the policies of any third-party ticket resellers.</p>
+              </div>
+          </div>
+
+          <div class="accordion-item">
+             <button id="accordion-button-2" aria-expanded="false">
+                 <span class="accordion-title">What's the best time to arrive?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>You should definitely plan to arrive several hours early to be on the safe side. Please be prepared for significant delays if you choose to disobey all signage and staff. Carpool, carpool, CARPOOL! For the easiest and fastest arrival and departure, take a shuttle.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-3" aria-expanded="false">
+                 <span class="accordion-title">What time does the festival end?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>1am-ish on Fri/Sat and 12am on Sun - give or take a few.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-4" aria-expanded="false">
+                 <span class="accordion-title">Is there an age limit/rule?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p> No. The festival is all ages. However, to camp you must be 18 or older.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-5" aria-expanded="false">
+                 <span class="accordion-title">Wow, there are lots of artists performing! Will I see all of them?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>There is no guarantee. Many artists will be performing at the same time and some areas will have limited capacities. You should plan accordingly and arrive early if there’s a particular performer you really want to see. Also, the lineup is always subject to change (whether due to volcanoes or any other reason).</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-6" aria-expanded="false">
+                 <span class="accordion-title">What will the weather be like at the festival? How hot will it be during the day and how cold will it be at night?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>See the New York 10-day weather forecast.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-7" aria-expanded="false">
+                 <span class="accordion-title">I'm a photographer (for a big, stuffy important publicatio). How do I make arrangements for a photo pass?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p> Photo Passes will be distributed at the discretion of the Festival and cannot be specifically requested as part of your press application. We will provide syndicated photos from our on-site photographers for use.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-8" aria-expanded="false">
+                 <span class="accordion-title"> Are you hiring workers, volunteers, photographers/video people, <br>etc for the event?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>No, but thanks for checking! If we change our minds or anything opens up, we will post about it.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-9" aria-expanded="false">
+                 <span class="accordion-title">How do I become a food vendor ... or a non-food vendor?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p> Food Vending: Please visit our contact page.
+
+                     Non-Food Vending: Please visit our contact page.</p>
+             </div>
+         </div>
+
+         <div class="accordion-item">
+             <button id="accordion-button-10" aria-expanded="false">
+                 <span class="accordion-title">I'm going to the festival, but not camping on site. Can I join in on all the cool stuff happening in the campgrounds?</span>
+                 <span class="icon" aria-hidden="true"></span>
+             </button>
+             <div class="accordion-content">
+                 <p>Anyone with a valid Festival Wristband is welcome in Car & Tent Camping at any time.
+
+                     However, there is no overnight parking available without a Car Camping or Camping Companion Parking Pass. If you parked in Day Parking or Preferred Parking, your car will be towed after 2am. Any Line Shuttles end outbound service one hour after the music stops. And the Rideshare Lot closes at 3am.
+                     
+                     Keep this in mind before wandering off to Camping to keep the party going.</p>
+             </div>
+         </div>
+
+
+
+      </div>
+  </div>
+</div>
+      <!--JavaScript starts here-->
+    <!--function allows nav bar to stick to top after scrolling-->
+    <script>
+    window.onscroll = function() {stickyTop()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function stickyTop() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+
+    for(i=0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+
+    if (itemToggle == 'false') {
+        this.setAttribute('aria-expanded' , 'true');
+    }
+}
+
+items.forEach((item) => item.addEventListener('click' , toggleAccordion));
+    </script>
+  </body>
+</html>

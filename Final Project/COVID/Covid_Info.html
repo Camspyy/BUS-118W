@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Info Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel ="stylesheet" href="CovidInfoCSS.css"/>
+    <!--NavBar CSS-->
+    <style>
+        .logoheader {
+          text-align: center;
+        }
+
+        .nav.navbar-nav li a {
+        color: black;
+         }
+
+         body {
+         background-image: url("/Home/HomeBackground.jpg");
+         background-color: white;
+         }  
+        .content {
+        padding: 16px;
+        }
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+        
+        .sticky + .content {
+        padding-top: 60px;
+        }
+        </style>
+
+</head>
+<body>
+    <!--NavBar Start-->
+    <div class="logoheader">
+      <img src = "/Home/WebsiteLogo.png" alt = "logo" >
+        </div>
+  
+  <!--Changes from white to black--> 
+  <nav class="navbar navbar-default" id = "navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="\Home\HomePage.html">
+          <img src="/Home/WebsiteLogo.png" alt="logo" style="width:45px;">
+         </a>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="topNav">
+        <ul class="nav navbar-nav">
+          <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+          <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+          <li><a href="\Contact\ContactUs.html">Contact</a></li>
+          <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+                <li><a href="\Directions\Directions.html">Directions</a></li>
+                <li><a href="\Parking\Parking.html">Parking</a></li>
+                <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+                <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+              </ul>
+            </li>
+          <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+          <li><a href="\Photos\Photos.html">Photos</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+      <!--NavBar End-->
+      
+     <div class = "header" ></div>
+    <br>
+    <br>
+    <div class="container">
+        <h2><u><b>FESTIVAL ADMISSION UPDATE</b></u></h2>
+        <p>
+            In accordance with local guidelines,
+            there will be no vaccination, 
+            testing or masking requirements at Coachella 2022.
+        </p>
+        <p>
+            However, the event shall be presented
+            in accordance with applicable public health conditions
+            as of the date of the event and which may change at any time as determined by federal, state or local government agencies 
+            or instrumentalities, artists or the promoter; such requirements may include, without limitation, changes to capacity, 
+            attendance procedures and entry requirements, such as proof of vaccination and/or negative COVID-19 test, and other protective measures such as requiring attendees to wear face coverings. 
+            If any ticket holder does not comply with any laws, mandates, health orders or directives, promoter or event terms, conditions or rules, then the promoter or event operator may refuse admission to the event 
+            or require the ticket holder to leave the venue and such ticket holder will not be entitled to a refund.
+        </p>
+
+        <h2><u><b>PUBLIC SAFETY</b></u></h2>
+        <p>
+            Security and safety are of utmost importance. We work hand in hand with law enforcement and public safety agencies to help ensure the safety of our events.
+             Because of those very same concerns, we are unable to publicly comment on detailed, specific actions which are taken. Some of the security measures you will notice upon your arrival such as bag checks, 
+             walk-through metal detectors (magnetometers) for all attendees, staff and performers, and dog sweeps.
+        </p>
+        <p>
+            Please note that we will implement searches upon festival entry. Please arrive early and note the Prohibited Items list, these will be confiscated / surrendered upon entry.
+
+        </p>
+        <p>
+            In the event of an emergency, information may be relayed on the video screens, over the audio system, and/or through mobile notifications. 
+
+        </p>
+         <p>
+            If you, or a friend, require medical assistance please locate your nearest medical tent or alert a staff member.
+            And remember: if you see something, say something. Flag down any staff member or Public Safety official if you notice something that doesn’t seem quite right.
+         </p>
+         <p>
+            Face coverings are recommended to protect against desert dust.
+         </p>
+  
+        <h2><u><b>ON-SITE/NEARBY COVID TESTING</b></u></h2>
+        <p style = "text-align: center;">
+        There will be rapid 15-minute antigen COVID-19 testing services by Guardian Testing available at Indian Wells Tennis Garden and the Camping Hub. 
+        </p>
+        <p style="text-align: center">
+            Burnett Fountain – COVID Testing Hours:
+                     <li>Friday 6/17/22 8am – 5pm</li>
+                     <li>Saturday 6/18/22 8am – 5pm</li>
+                     <li>Sunday 6/19/22 8am – 5pm</li>
+        </p>
+        <p style="text-align: center">
+            Untermyer Fountain – COVID Testing Hours:
+                    <li>Friday 6/17/22 8am – 5pm</li>
+                    <li>Saturday 6/18/22 8am – 5pm</li>
+                    <li>Sunday 6/19/22 8am – 5pm</li>
+        </p>
+      </div>
+<!--JavaScript starts here-->
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+  window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>        
+</body>
+</html>

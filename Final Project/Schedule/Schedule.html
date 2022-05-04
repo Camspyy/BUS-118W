@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="\Schedule\ScheduleCSS.css"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel=”stylesheet” href=”../css/bootstrap.css”>
+    <link rel=”stylesheet” href=”../css/bootstrap-responsive.css”>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Schedule Page</title>
+    <!--CSS for Nav Bar-->
+    <style>
+
+       html * {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+      .logoheader {
+        text-align: center;
+      }
+      .nav.navbar-nav li a {
+       color: black;
+       }
+
+      .content {
+      padding: 16px;
+      }
+      .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      }
+      
+      .sticky + .content {
+      padding-top: 60px;
+      }
+      </style>
+  </head>
+  <body>
+    <!--Start of HTML for Nav Bar -->
+  <div class="logoheader">
+    <img src = "/Home/WebsiteLogo.png" alt = "logo">
+    </div>
+    
+<!--can change from white to black--> 
+<nav class="navbar navbar-default" id = "navbar">
+<div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    <a class="navbar-brand" href="HomePage.html">
+      <img src="/Home/WebsiteLogo.png" alt="logo" style="width: 45px;">
+     </a>
+    </a>
+  </div>
+  <div class="collapse navbar-collapse" id="topNav">
+    <ul class="nav navbar-nav">
+      <li><a href="\Tickets\Tickets.html">Tickets</a></li>
+      <li><a href="\Schedule\Schedule.html">Schedule</a></li>
+      <li><a href="\Contact\ContactUs.html">Contact</a></li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Information<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="\Item Policy\ItemPolicy.html">Item Policy</a></li>
+            <li><a href="\Directions\Directions.html">Directions</a></li>
+            <li><a href="\Parking\Parking.html">Parking</a></li>
+            <li><a href="\Hotel\Hotel.html">Hotels</a></li>
+            <li><a href="\FAQ\FAQ.html">FAQ</a></li>
+          </ul>
+        </li>
+      <li><a href="\COVID\Covid_Info.html">COVID-19</a></li>
+      <li><a href="\Photos\Photos.html">Photos</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<!--Start of Schedule-->
+<div class = "header"> </div>
+    <div class="BigText">
+      <h1>June 2022 Lineup</h1>
+        <form action="../Check Out/Checkout.html">
+      <input class="buttoncenter" type="submit" value="Get Tickets" />
+  </form>
+    </div>
+  
+    <div class="flyer">
+      <img src="Schedule.jpg" class="img-responsive" alt="Responsive image">
+    </div>
+    <div class="flex-container">
+      <div class="flex-child" style="background: #8bc6cc">
+        <div class="stepTitle">
+          <p>April 15 & 22</p>
+          <p>Featured Artists</p>
+        </div>
+        <div class="bad">
+          <li>Baby Keem</li>
+          </br>
+          <li>Louis the Child</li>
+          </br>
+          <li>Big Sean</li>
+          </br>
+          <li>Daniel Caesar</li>
+          </br>
+          <li>Lil Baby</li>
+          </br>
+          <li>Harry Styles</li>
+          </br>
+        </div>
+      </div>
+      <div class="flex-child" style="background: #88c1c6">
+        <div class="stepTitle">
+          <p>Saturday April 16 & 23</p>
+          <p>Featured Artists</p>
+        </div>
+        <div class="bad">
+        <li>Megan Thee Stallion</li>
+        </br>
+        <li>21 Savage</li>
+        </br>
+        <li>BROCKHAMPTON</li>
+        </br>
+        <li>Danny Elfman</li>
+        </br>
+        <li>Steve Lacy</li>
+        </br>
+        <li>Rich Brian</li>
+        </div>
+      </div>
+      <div class="flex-child" style="background: #88c1c6">
+        <div class="stepTitle">
+          <p>April 17 & 24</p>
+          <p>Featured Artists</p>
+        </div>
+        <div class="bad">
+        <li>Doja Cat</li>
+        </br>
+        <li>Ari Lennox</li>
+        </br>
+        <li>J.I.D</li>
+        </br>
+        <li>Vince Staples</li>
+        </br>
+        <li>Alec Benjamin</li>
+        </br>
+        <li>Joji</li>
+        </div>
+      </div>
+<!--function allows nav bar to stick to top after scrolling-->
+<script>
+  window.onscroll = function() {stickyTop()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function stickyTop() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+</body>
+</html>
